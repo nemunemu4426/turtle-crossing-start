@@ -15,7 +15,8 @@ class CarManager:
     def generate_car(self):
         x = 300
         y = random.randint(-240, 240)
-        self.add_car((x, y))
+        if random.randint(1, 6) == 1:
+            self.add_car((x, y))
 
     def add_car(self, position):
         car = Turtle(shape="square")
